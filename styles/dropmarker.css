@@ -1,0 +1,81 @@
+/* Fix forward button */
+#forward-button {
+-moz-appearance: none !important ;
+-height: 27px !important ;
+list-style-image: url("chrome://browser/skin/ToolbarOld.png") !important;
+-moz-image-region: rect(2px, 424px, 33px, 396px) !important ; 
+}
+
+#forward-button:hover {
+  -moz-image-region: rect(36px, 424px, 67px, 396px) !important;
+}
+
+#forward-button:hover:active {
+  -moz-image-region: rect(104px, 424px, 135px, 396px) !important; 
+}
+
+#forward-button[disabled="true"], #forward-button[disabled="true"]:hover:active {
+  -moz-image-region: rect(70px, 424px, 101px, 396px) !important;
+}
+
+toolbar[iconsize="small"] #forward-button {
+-moz-appearance: none !important ;
+-height: 24px !important ;
+list-style-image: url("chrome://browser/skin/ToolbarOld-small.png") !important;
+-moz-image-region: rect(0px 289px 24px 264px) !important ; 
+}
+
+toolbar[iconsize="small"] #forward-button:hover {
+  -moz-image-region: rect(24px 289px 48px 264px) !important;
+}
+
+toolbar[iconsize="small"] #forward-button:hover:active {
+  -moz-image-region: rect(72px, 289px, 96px, 264px) !important; 
+}
+
+toolbar[iconsize="small"] #forward-button[disabled="true"], #forward-button[disabled="true"]:hover:active {
+  -moz-image-region: rect(48px, 289px, 72px, 264px) !important;
+}
+
+/* Fix back-forward dropmarker */
+#back-forward-dropmarker {
+  -moz-appearance: none !important ;
+  height: 27px !important ;
+  margin-left: -4px !important;
+  list-style-image: url("chrome://browser/skin/ToolbarOld.png") !important;
+  -moz-image-region: rect(2px, 438px, 33px, 424px) !important ; 
+}
+
+#back-forward-dropmarker:hover {
+  -moz-image-region: rect(36px, 438px, 67px, 424px) !important; 
+}
+
+#back-forward-dropmarker:hover:active {
+  -moz-image-region: rect(104px, 438px, 135px, 424px) !important; 
+}
+
+#back-forward-dropmarker[disabled="true"], #back-forward-dropmarker[disabled="true"]:hover:active {
+  opacity: 1 !important ;
+  -moz-image-region: rect(70px, 438px, 101px, 424px) !important ; 
+}
+
+toolbar[iconsize="small"] #back-forward-dropmarker {
+  -moz-appearance: none !important ;
+  height: 27px !important ;
+  margin-left: -4px !important;
+  list-style-image: url("chrome://browser/skin/ToolbarOld-small.png") !important;
+  -moz-image-region: rect(0px, 301px, 24px, 289px) !important ; 
+}
+
+toolbar[iconsize="small"] #back-forward-dropmarker:hover {
+  -moz-image-region: rect(24px, 301px, 48px, 289px) !important; 
+}
+
+toolbar[iconsize="small"] #back-forward-dropmarker:hover:active {
+  -moz-image-region: rect(72px, 301px, 96px, 289px) !important; 
+}
+
+toolbar[iconsize="small"] #back-forward-dropmarker[disabled="true"], #back-forward-dropmarker[disabled="true"]:hover:active {
+  opacity: 1 !important ;
+  -moz-image-region: rect(48px, 301px, 72px, 289px) !important ; 
+}

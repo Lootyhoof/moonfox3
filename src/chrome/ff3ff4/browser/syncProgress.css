@@ -1,0 +1,53 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* removed the inContentUI import here, because we don't want to use those styles. */
+
+:root {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  background-color: -moz-Dialog;
+}
+
+body {
+  margin: 0;
+  padding: 0 1em;
+}
+
+#floatingBox {
+  background: -moz-Field;
+  font: message-box;
+  color: -moz-FieldText;
+  border-radius: 10px;
+  border: 1px solid ThreeDShadow;
+  margin: 4em auto;
+  max-width: 50em;
+  min-width: 23em;
+  padding: 1em 1.5em;
+  position: relative;
+  text-align: center;
+}
+
+#successLogo {
+  margin: 1em 2em;
+}
+
+#loadingText {
+  margin: 2em 6em;
+}
+
+#progressBar {
+  margin: 2em 10em;
+}
+
+#uploadProgressBar{
+  width: 100%;
+}
+
+#bottomRow {
+  margin-top: 2em;
+  padding: 0;
+  text-align: end;
+}
