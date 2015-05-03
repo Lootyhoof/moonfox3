@@ -1,5 +1,9 @@
 # Changelog
 
+### 1.0.3
+- use more FF3 icons
+- tab bar + new tab fixes
+
 ### 1.0.2
 - further Firefox 3 stylings
 
