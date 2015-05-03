@@ -1949,6 +1949,7 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
   background-repeat: no-repeat;
   margin: 1px 0 4px 0 !important;
   padding: 1px 0 2px 0 !important;
+  min-height: 22px !important;
   -moz-border-image: url(tabbrowser/tab.png) 4 3 0 / 4px 3px 0 repeat stretch;
   border-radius: 0;
 }
@@ -2047,12 +2048,10 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
 background-image: none !important;
 }
 
-.tab-throbber {
-  list-style-image: url("chrome://browser/skin/tabbrowser/connecting.png");
-}
-
+.tab-throbber,
 .tab-throbber[progress] {
-  list-style-image: url("chrome://browser/skin/tabbrowser/loading.png");
+  list-style-image: url("chrome://browser/skin/tabbrowser/Throbber.gif");
+  margin-left: 7px;
 }
 
 #tabbrowser-tabs[positionpinnedtabs] > .tabbrowser-tab[pinned] {
@@ -2271,7 +2270,7 @@ tabpanels {
 .tabs-newtab-button:hover,
 .tabs-alltabs-button:hover {
   border-top-width: 1px;
-  padding-top: 1px;
+  padding-top: 2px !important;
   -moz-border-top-colors: ThreeDShadow;
   -moz-border-right-colors: ThreeDShadow;
   -moz-border-left-colors: ThreeDShadow transparent;
@@ -2453,7 +2452,7 @@ tabpanels {
 
 .tabs-newtab-button:hover:active,
 #TabsToolbar > #new-tab-button:hover:active {
-  -moz-image-region: rect(0, 36px, 18px, 18px);
+  -moz-image-region: rect(0, 32px, 18px, 18px);
 }
 
 /* List style image and region for large alltabs icon */
