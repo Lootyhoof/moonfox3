@@ -8,6 +8,12 @@
   background-color: transparent;
 }
 
+#padlock-ib[padshow="ib-trans-bg"][level="low"],
+#padlock-ib[padshow="ib-trans-bg"][level="mixed"] {
+  list-style-image: url("padlock_mod_low.png") !important;
+  background-color: transparent;
+}
+
 #padlock-ib[padshow="ib-trans-bg"][level="broken"] {
   list-style-image: url("padlock_mod_broken.png") !important;
   background-color: transparent;
