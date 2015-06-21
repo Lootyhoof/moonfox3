@@ -1,39 +1,10 @@
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MPL 1.1/GPL 2.0/LGPL 2.1
- *
- * The contents of this file are subject to the Mozilla Public License Version
- * 1.1 (the "License"); you may not use this file except in compliance with
- * the License. You may obtain a copy of the License at
- * http://www.mozilla.org/MPL/
- *
- * Software distributed under the License is distributed on an "AS IS" basis,
- * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
- * for the specific language governing rights and limitations under the
- * License.
- *
- * The Original Code is the Extension Manager UI.
- *
- * The Initial Developer of the Original Code is
- * the Mozilla Foundation.
- * Portions created by the Initial Developer are Copyright (C) 2010
- * the Initial Developer. All Rights Reserved.
- *
- * Contributor(s):
- *   Blair McBride <bmcbride@mozilla.com>
- *
- * Alternatively, the contents of this file may be used under the terms of
- * either the GNU General Public License Version 2 or later (the "GPL"), or
- * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
- * in which case the provisions of the GPL or the LGPL are applicable instead
- * of those above. If you wish to allow use of your version of this file only
- * under the terms of either the GPL or the LGPL, and not to allow others to
- * use your version of this file under the terms of the MPL, indicate your
- * decision by deleting the provisions above and replace them with the notice
- * and other provisions required by the GPL or the LGPL. If you do not delete
- * the provisions above, a recipient may use your version of this file under
- * the terms of any one of the MPL, the GPL or the LGPL.
- *
- * ***** END LICENSE BLOCK ***** */
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 @import url("chrome://global/skin/inContentUI.css");
 
@@ -87,7 +58,7 @@
   border-bottom: 1px solid #CAD4E0;  
 }
 
-@media all and (max-width: 600px) {
+@media (max-width: 600px) {
   .global-warning-text {
     display: none;
   }
@@ -168,7 +139,7 @@
   color: #373D48;
   border: 1px solid #A8B8D1;
   border-radius: 8px;
-  background-image: -moz-linear-gradient(top, #FFF, #ECF1F7);
+  background-image: linear-gradient(#FFF, #ECF1F7);
   background-clip: padding-box;
   box-shadow: 2px 2px 4px #999; 
 }
@@ -179,8 +150,6 @@
   margin-bottom: 15px;
 }
 
-/* JEZ: Selector(s) added rather than modified here to maintain backwards compatibility. */
-.alert .addon-control,
 .alert button {
   margin: 1em 2em;
 }
@@ -231,14 +200,14 @@
   border-bottom: 0;
   height: 0;
   opacity: 0;
-  -moz-transition-property: height, opacity;
-  -moz-transition-duration: 1s, 0.8s;
+  transition-property: height, opacity;
+  transition-duration: 1s, 0.8s;
 }
 
 .category:not([disabled]) {
   height: 52px;
-  -moz-transition-property: height, opacity;
-  -moz-transition-duration: 1s, 0.8s;
+  transition-property: height, opacity;
+  transition-duration: 1s, 0.8s;
 }
 
 .category[selected] {
@@ -253,7 +222,7 @@
 }
 
 /* Maximize the size of the viewport when the window is small */
-@media all and (max-width: 800px) {
+@media (max-width: 800px) {
   .category-name {
     display: none;
   }
@@ -285,26 +254,26 @@
 #category-discover > .category-icon {
   list-style-image: url("chrome://mozapps/skin/extensions/category-discover.png");
 }
-/* JEZ: Selector(s) added rather than modified here to maintain backwards compatibility. */
-#category-locale > .category-icon,
-#category-languages > .category-icon {
+#category-locale > .category-icon {
   list-style-image: url("chrome://mozapps/skin/extensions/category-languages.png");
 }
-#category-searchengine > .category-icon,
-#category-searchengines > .category-icon {
+#category-searchengine > .category-icon {
   list-style-image: url("chrome://mozapps/skin/extensions/category-searchengines.png");
 }
-#category-extension > .category-icon,
-#category-extensions > .category-icon {
+#category-extension > .category-icon {
   list-style-image: url("chrome://mozapps/skin/extensions/category-extensions.png");
 }
-#category-theme > .category-icon,
-#category-themes > .category-icon {
+#category-service > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-service.png");
+}
+#category-theme > .category-icon {
   list-style-image: url("chrome://mozapps/skin/extensions/category-themes.png");
 }
-#category-plugin > .category-icon,
-#category-plugins > .category-icon {
+#category-plugin > .category-icon {
   list-style-image: url("chrome://mozapps/skin/extensions/category-plugins.png");
+}
+#category-dictionary > .category-icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/category-dictionaries.png");
 }
 #category-availableUpdates > .category-icon {
   list-style-image: url("chrome://mozapps/skin/extensions/category-available.png");
@@ -320,28 +289,35 @@
   margin-bottom: 18px;
 }
 
-/* JEZ: I don't see why these should only apply in a Windows default theme selector; it's staying as it is. */
 #header-search {
-  -moz-appearance: none;
-  color: black;
-  border: 1px solid;
-  border-color: rgba(0, 0, 0, 0.25) rgba(0, 0, 0, 0.32) rgba(0, 0, 0, 0.37);
-  /* JEZ: This 4px border radius looks nicer.  Keep it. */
-  border-radius: 4px;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1) inset,
-              0 1px 0 rgba(255, 255, 255, 0.4);
-  padding: 3px;
-  background-color: rgba(255, 255, 255, 0.8);
   margin: 0;
 }
 
-#header-search[focused="true"] {
-  background-color: white;
+@media (max-width: 600px) {
+  #header-search {
+    width: 12em;
+  }
 }
 
-/* JEZ: I think having a min-width looks nicer, so it's staying. */
+@media (-moz-windows-default-theme) {
+  #header-search {
+    -moz-appearance: none;
+    border: 1px solid rgba(0, 0, 0, 0.32);
+    border-radius: 2.5px;
+    padding-bottom: 2px;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  #header-search:hover {
+    background-color: rgba(255, 255, 255, .75);
+  }
+
+  #header-search[focused] {
+    background-color: white;
+  }
+}
+
 #header-utils-btn {
-  min-width: 4.5em;
   list-style-image: url("chrome://mozapps/skin/extensions/utilities.png");
   -moz-margin-end: 16px;
 }
@@ -499,6 +475,10 @@
   list-style-image: url("chrome://mozapps/skin/plugins/pluginGeneric.png");
 }
 
+.addon-view[type="dictionary"] .icon {
+  list-style-image: url("chrome://mozapps/skin/extensions/dictionaryGeneric.png");
+}
+
 .name-container {
   font-size: 150%;
   font-weight: bold;
@@ -593,14 +573,14 @@
   height: 0;
   overflow: hidden;
   opacity: 0;
-  -moz-transition-property: height, opacity;
-  -moz-transition-duration: 0.5s, 0.5s;
+  transition-property: height, opacity;
+  transition-duration: 0.5s, 0.5s;
 }
 
 .addon[show-relnotes] .relnotes-container {
   opacity: 1;
-  -moz-transition-property: height, opacity;
-  -moz-transition-duration: 0.5s, 0.5s;
+  transition-property: height, opacity;
+  transition-duration: 0.5s, 0.5s;
 }
 
 .addon .relnotes-header {
@@ -628,8 +608,8 @@
 
 .addon[active="false"] {
   background-color: rgba(135, 135, 135, 0.1);
-  background-image: -moz-linear-gradient(rgba(135, 135, 135, 0),
-                                         rgba(135, 135, 135, 0.1));
+  background-image: linear-gradient(rgba(135, 135, 135, 0),
+                                    rgba(135, 135, 135, 0.1));
 }
 
 .addon-view[active="false"],
@@ -639,15 +619,15 @@
 
 .addon-view[notification="warning"] {
   background-image: url("chrome://mozapps/skin/extensions/stripes-warning.png"),
-                    -moz-linear-gradient(rgba(255, 255, 0, 0.04),
-                                         rgba(255, 255, 0, 0));
+                    linear-gradient(rgba(255, 255, 0, 0.04),
+                                    rgba(255, 255, 0, 0));
   background-repeat: repeat-x;
 }
 
 .addon-view[notification="error"] {
   background-image: url("chrome://mozapps/skin/extensions/stripes-error.png"),
-                    -moz-linear-gradient(rgba(255, 0, 0, 0.04),
-                                         rgba(255, 0, 0, 0));
+                    linear-gradient(rgba(255, 0, 0, 0.04),
+                                    rgba(255, 0, 0, 0));
   background-repeat: repeat-x;
 }
 
@@ -655,16 +635,16 @@
 .addon-view[pending="upgrade"],
 .addon-view[pending="install"] {
   background-image: url("chrome://mozapps/skin/extensions/stripes-info-positive.png"),
-                    -moz-linear-gradient(rgba(0, 255, 0, 0.04),
-                                         rgba(0, 255, 0, 0));
+                    linear-gradient(rgba(0, 255, 0, 0.04),
+                                    rgba(0, 255, 0, 0));
   background-repeat: repeat-x;
 }
 
 .addon-view[pending="disable"],
 .addon-view[pending="uninstall"] {
   background-image: url("chrome://mozapps/skin/extensions/stripes-info-negative.png"),
-                    -moz-linear-gradient(rgba(128, 128, 128, 0.04),
-                                         rgba(128, 128, 128, 0));
+                    linear-gradient(rgba(128, 128, 128, 0.04),
+                                    rgba(128, 128, 128, 0));
   background-repeat: repeat-x;
 }
 
@@ -745,8 +725,8 @@
 
 #detail-view[loading-extended] .loading {
   opacity: 1;
-  -moz-transition-property: opacity;
-  -moz-transition-duration: 1s;
+  transition-property: opacity;
+  transition-duration: 1s;
 }
 
 .detail-view-container {
@@ -765,9 +745,13 @@
   -moz-margin-start: 0;
 }
 
-#detail-icon {
+#detail-icon-container {
+  width: 64px;
   -moz-margin-end: 10px;
   margin-top: 6px;
+}
+
+#detail-icon {
   max-width: 64px;
   max-height: 64px;
 }
@@ -788,7 +772,7 @@
 
 #detail-screenshot[loading] {
   background-image: url("chrome://global/skin/icons/loading_16.png"),
-                    -moz-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+                    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
   background-position: 50% 50%;
   background-repeat: no-repeat;
   border-radius: 3px;
@@ -796,7 +780,7 @@
 
 #detail-screenshot[loading="error"] {
   background-image: url("chrome://global/skin/media/error.png"),
-                    -moz-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+                    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
 }
 
 #detail-desc-container {
@@ -842,8 +826,8 @@
   border-radius: 3px;
   list-style-image: url("chrome://mozapps/skin/extensions/heart.png");
   background-color: #2F73EF;
-  background-image: -moz-linear-gradient(rgba(251, 252, 253, 0.70), rgba(246, 247, 248, 0.27) 49%, 
-                                         rgba(231, 232, 233, 0.25) 51%, rgba(225, 226, 229, 0.1));
+  background-image: linear-gradient(rgba(251, 252, 253, 0.70), rgba(246, 247, 248, 0.27) 49%, 
+                                    rgba(231, 232, 233, 0.25) 51%, rgba(225, 226, 229, 0.1));
 }
 
 #detail-contrib-btn .button-box {
@@ -859,9 +843,9 @@
   background-color: #0459F7;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1),
               0 0 3.5px hsl(190, 90%, 80%);
-  -moz-transition: background-color .4s ease-in,
-                   border-color .3s ease-in,
-                   box-shadow .3s ease-in
+  transition: background-color .4s ease-in,
+              border-color .3s ease-in,
+              box-shadow .3s ease-in;
 }
 
 #detail-contrib-btn:active:hover {
@@ -877,6 +861,7 @@
 }
 
 #detail-grid > columns > column:first-child {
+  min-width: 15em;
   max-width: 25em;
 }
 
@@ -900,12 +885,21 @@ setting {
 }
 
 #detail-view[active="false"]:not([pending]):not([notification]) {
-  background-image: -moz-linear-gradient(rgba(135, 135, 135, 0.1),
-                                         rgba(135, 135, 135, 0));
+  background-image: linear-gradient(rgba(135, 135, 135, 0.1),
+                                    rgba(135, 135, 135, 0));
 }
 
 setting[first-row="true"] {
   margin-top: 2em;
+}
+
+setting {
+  -moz-box-align: start;
+}
+
+.preferences-alignment {
+  min-height: 30px;
+  -moz-box-align: center;
 }
 
 .preferences-description {
@@ -913,10 +907,11 @@ setting[first-row="true"] {
   color: graytext;
   margin-top: -2px;
   -moz-margin-start: 2em;
+  white-space: pre-wrap;
 }
 
-setting[type="string"] > .setting-input > textbox {
-  -moz-box-flex: 1;
+.preferences-description:empty {
+  display: none;
 }
 
 setting[type="radio"] > radiogroup {
@@ -961,8 +956,8 @@ menulist { /* Fixes some styling inconsistencies */
 
 .download-progress {
   background-color: rgba(151,152,153,.05);
-  background-image: -moz-linear-gradient(rgba(251, 252, 253, 0.95), rgba(246, 247, 248, 0.47) 49%, 
-                                         rgba(231, 232, 233, 0.45) 51%, rgba(225, 226, 229, 0.3));
+  background-image: linear-gradient(rgba(251, 252, 253, 0.95), rgba(246, 247, 248, 0.47) 49%, 
+                                    rgba(231, 232, 233, 0.45) 51%, rgba(225, 226, 229, 0.3));
   background-clip: padding-box;
   border-radius: 3px;
   border: 1px solid;
@@ -987,7 +982,7 @@ menulist { /* Fixes some styling inconsistencies */
 .download-progress[mode="undetermined"] .end-cap,
 .download-progress .progress .progress-bar {
   -moz-appearance: none;
-  background-image: -moz-linear-gradient(#92DDA0, #6FC483 49%, #5EB272 51%, #80CE91);
+  background-image: linear-gradient(#92DDA0, #6FC483 49%, #5EB272 51%, #80CE91);
   margin-top: -1px;
   margin-bottom: -1px;
   border: 1px solid;
@@ -1107,46 +1102,6 @@ menulist { /* Fixes some styling inconsistencies */
 
 /*** buttons ***/
 
-/* JEZ: I don't know why this stuff seems to have been removed lately; it removes nice button stylings.  It's staying for this theme. */
-.addon-control {
-  -moz-appearance: none;
-  color: black;
-  padding: 0 5px;
-  background-color: rgba(151,152,153,.05);
-  background-image: -moz-linear-gradient(rgba(251, 252, 253, 0.95), rgba(246, 247, 248, 0.47) 49%, 
-                                         rgba(231, 232, 233, 0.45) 51%, rgba(225, 226, 229, 0.3));
-  background-clip: padding-box;
-  border-radius: 3px;
-  border: 1px solid;
-  border-color: rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.19) rgba(0, 0, 0, 0.38);
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3) inset,
-              0 0 0 2px rgba(255, 255, 255, 0.1) inset;
-}
-
-.addon-control:not(:active):hover {
-  background-color: hsla(190, 60%, 70%, 0.5);
-  border-color: hsla(190, 50%, 65%, 0.8) hsla(190, 50%, 50%, 0.8) hsla(190, 50%, 40%, 0.8);
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3) inset,
-              0 0 0 1.5px rgba(255, 255, 255, 0.1) inset,
-              0 1px 0 rgba(0, 0, 0, 0.1),
-              0 0 3.5px hsl(190, 90%, 80%);
-  -moz-transition: background-color .4s ease-in,
-                   border-color .3s ease-in,
-                   box-shadow .3s ease-in
-}
-
-.addon-control:active:hover {
-  background-color: transparent;
-  border-color: rgba(0, 0, 0, 0.65) rgba(0, 0, 0, 0.55) rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 6.5px rgba(0, 0, 0, 0.4) inset,
-              0 0 2px rgba(0, 0, 0, 0.4) inset,
-              0 1px 0 rgba(255, 255, 255, 0.4);
-}
-
-.addon-control .button-box {
-  padding: 1px;
-}
-
 .addon-control[disabled="true"] {
   display: none;
 }
@@ -1179,54 +1134,34 @@ button.button-link:not([disabled="true"]):active:hover {
   box-shadow: none;
 }
 
-/* JEZ: I think the new header-button stylings are inferior and make it look worse.  Mine are staying. */
 .header-button {
   -moz-appearance: none;
-  margin: 0;
-  background: rgba(151,152,153,.05)
-              -moz-linear-gradient(rgba(251, 252, 253, 0.95), rgba(246, 247, 248, 0.47) 49%, 
-                                   rgba(231, 232, 233, 0.45) 51%, rgba(225, 226, 229, 0.3));
+  padding: 1px 3px;
+  color: #444;
+  text-shadow: 0 0 3px white;
+  background: linear-gradient(rgba(251, 252, 253, 0.95), rgba(246, 247, 248, 0) 49%, 
+                              rgba(211, 212, 213, 0.45) 51%, rgba(225, 226, 229, 0.3));
   background-clip: padding-box;
-  border-radius: 4.5px;
-  border: 1px solid;
-  border-color: rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.19) rgba(0, 0, 0, 0.38);
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3) inset,
-              0 0 0 2px rgba(255, 255, 255, 0.1) inset;
+  border-radius: 2.5px;
+  border: 1px solid rgba(31, 64, 100, 0.4);
+  border-top-color: rgba(31, 64, 100, 0.3);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25) inset,
+              0 0 2px 1px rgba(255, 255, 255, 0.25) inset;
 }
 
 .header-button[disabled="true"] {
-  -moz-border-top-colors: rgba(0, 0, 0, 0.12) !important;
-  -moz-border-left-colors: rgba(0, 0, 0, 0.19) !important;
-  -moz-border-right-colors: rgba(0, 0, 0, 0.19) !important;
-  -moz-border-bottom-colors: rgba(0, 0, 0, 0.38) !important;
   opacity: 0.8;
 }
 
-/* JEZ: Selector(s) added rather than modified here to maintain backwards compatibility. */
-.nav-button[disabled="true"] > .toolbarbutton-icon,
 .header-button[disabled="true"] > .toolbarbutton-icon {
   opacity: 0.4;
 }
 
-.header-button:not([open="true"]):not([disabled="true"]):not(:active):hover {
-  background-color: hsla(190, 60%, 70%, 0.5);
-  border-color: hsla(190, 50%, 65%, 0.8) hsla(190, 50%, 50%, 0.8) hsla(190, 50%, 40%, 0.8);
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3) inset,
-              0 0 0 1.5px rgba(255, 255, 255, 0.1) inset,
-              0 1px 0 rgba(0, 0, 0, 0.1),
-              0 0 3.5px hsl(190, 90%, 80%);
-  -moz-transition: background-color .4s ease-in,
-                   border-color .3s ease-in,
-                   box-shadow .3s ease-in
-}
-
-/* JEZ: Again, IMHO the new button styling here in the default theme looks inferior.  Mine is staying. */
 .header-button:not([disabled="true"]):active:hover,
 .header-button[open="true"] {
-  background-color: transparent;
-  border-color: rgba(0, 0, 0, 0.65) rgba(0, 0, 0, 0.55) rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 6.5px rgba(0, 0, 0, 0.4) inset,
-              0 0 2px rgba(0, 0, 0, 0.4) inset;
+  background-color: rgba(61, 76, 92, 0.2);
+  border-color: rgba(39, 53, 68, 0.5);
+  box-shadow: 0 0 3px 1px rgba(39, 53, 68, 0.2) inset;
 }
 
 .header-button > .toolbarbutton-text {
