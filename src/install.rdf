@@ -9,9 +9,9 @@
 
   <Description about="urn:mozilla:install-manifest">
 	<em:id>{0ed852bb-a216-42e9-b98e-98e62085837f}</em:id>
-	<em:version>1.0.3</em:version>
-    <em:name>Moonfox 3</em:name>
-    <em:description>Experience all the benefits of Firefox 4 (or later) with the colorful toolbar goodness of Firefox 3! Fork of "Firefox 3 theme for Firefox 4+ Reloaded!" by dallasthemaster</em:description>
+	<em:version>1.0.4</em:version>
+    <em:name>Moonfox3</em:name>
+    <em:description>Experience all the benefits of Pale Moon with the colorful toolbar goodness of Firefox 3! Fork of "Firefox 3 theme for Firefox 4+ Reloaded!" by dallasthemaster and Jeremy Morton</em:description>
     <em:creator>Lootyhoof</em:creator>
     <em:type>4</em:type>
     <em:internalName>mf3</em:internalName>
