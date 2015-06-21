@@ -1,11 +1,4 @@
-skin    global              mf3   chrome/ff3ff4/global/    
-skin    browser             mf3    chrome/ff3ff4/browser/    
-skin    mozapps             mf3    chrome/ff3ff4/mozapps/    
-
-# Fallback OS-specific skin for any OSes not matched below
-skin    ff3ff4_os_specific  mf3    chrome/ff3ff4/os_specific/win/
-
-# OS-specific skin contents overrides
-skin    ff3ff4_os_specific  mf3    chrome/ff3ff4/os_specific/win/  os=WINNT
-skin    ff3ff4_os_specific  mf3    chrome/ff3ff4/os_specific/mac/  os=Darwin
-skin    ff3ff4_os_specific  mf3    chrome/ff3ff4/os_specific/lin/  os=Linux
+skin	browser		mf3	chrome/ff3ff4/browser/
+skin	communicator	mf3	chrome/ff3ff4/communicator/
+skin	global		mf3	chrome/ff3ff4/global/
+skin	mozapps		mf3	chrome/ff3ff4/mozapps/
