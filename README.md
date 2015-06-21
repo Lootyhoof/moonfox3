@@ -1,4 +1,4 @@
-# Moonfox 3
+# Moonfox3
 Fork of the theme [Firefox 3 theme for Firefox 4+ Reloaded!] (https://addons.mozilla.org/en-US/firefox/addon/firefox-3-theme-for-firefox-1/) by dallasthemaster for Pale Moon.
 
 ## Building
