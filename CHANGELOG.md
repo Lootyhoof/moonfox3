@@ -4,6 +4,7 @@
 - re-base several components on Kempelton Reloaded
   - fixes Linux issues
 - use PM25's about:addons
+- add back/forward dropmarker
 
 ### 1.0.3
 - use more FF3 icons
