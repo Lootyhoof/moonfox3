@@ -1,5 +1,10 @@
 # Changelog
 
+### 1.0.4
+- re-base several components on Kempelton Reloaded
+  - fixes Linux issues
+- use PM25's about:addons
+
 ### 1.0.3
 - use more FF3 icons
 - tab bar + new tab fixes
