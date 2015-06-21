@@ -58,5 +58,26 @@
       <children includes="menupopup"/>
     </content>
   </binding>
+  
+  <binding id="restore-back-forward-dropmarker">
+    <content>
+     <children/>
+      <xul:box id="dropmarker-observer1">
+      <xul:observes element="back-button" attribute="disabled"/>
+        <xul:box id="dropmarker-observer2">
+        <xul:observes element="forward-button" attribute="disabled"/>
+          <xul:toolbarbutton
+          id="back-forward-dropmarker"
+          type="menu">
+            <xul:menupopup
+            onpopupshowing="return FillHistoryMenu(event.target);"
+            oncommand="gotoHistoryIndex(event); event.stopPropagation();"
+            onclick="checkForMiddleClick(this, event);"
+            position="after_start"/>
+          </xul:toolbarbutton>
+        </xul:box>
+      </xul:box> 
+    </content>
+  </binding>
 
 </bindings>

@@ -1,29 +1,22 @@
 /* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
-
-/* removed the inContentUI import here, because we don't want to use those styles. */
+@import url(chrome://global/skin/inContentUI.css);
 
 :root {
   height: 100%;
   width: 100%;
   padding: 0;
-  background-color: -moz-Dialog;
 }
 
 body {
   margin: 0;
-  padding: 0 1em;
+  padding: 0 2em;
 }
 
 #floatingBox {
-  background: -moz-Field;
-  font: message-box;
-  color: -moz-FieldText;
-  border-radius: 10px;
-  border: 1px solid ThreeDShadow;
   margin: 4em auto;
-  max-width: 50em;
+  max-width: 40em;
   min-width: 23em;
   padding: 1em 1.5em;
   position: relative;

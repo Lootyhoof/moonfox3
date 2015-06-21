@@ -61,15 +61,16 @@ menuitem[default="true"] {
 
 /* Aero+glass specific */
 @media all and (-moz-windows-compositor) {
+  menu[disabled="true"],
   menuitem[disabled="true"],
   .splitmenu-menuitem[disabled="true"],
   menu[_moz-menuactive="true"][disabled="true"],
   menuitem[_moz-menuactive="true"][disabled="true"],
   .splitmenu-menuitem[_moz-menuactive="true"][disabled="true"] {
-    color: GrayText;
+    color: -moz-dialogtext;
   }
   
-  menubar > menu {
+  menubar > menu:-moz-window-inactive {
     color: -moz-dialogtext;
   }
 }

@@ -211,26 +211,3 @@
 #searchFilter {
   margin-right: 0;
 }
-
-/* Aero+glass specific */
-@media all and (-moz-windows-compositor) {
-  #searchFilter {
-    -moz-appearance: none;
-    background-color: rgba(243,245,250,1);
-    color: black;
-    padding: 2px;
-    -moz-padding-start: 4px;
-    background-clip: padding-box;
-    border: 1px solid ThreeDDarkShadow;
-    border-radius: 3.5px;
-    border-color: rgba(0,0,0,.32);
-  }
-
-  #searchFilter:hover {
-    background-color: rgba(251,251,253,1);
-  }
-
-  #searchFilter[focused] {
-    background-color: white;
-  }
-}
