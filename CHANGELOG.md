@@ -1,5 +1,15 @@
 # Changelog
 
+### 1.0.5
+- re-use some browser.css code from previous versions (re-re-base on FF3FF4)
+- lift searchbar code directly from Firefox 3
+- lift #identity-box and #urlbar code from Firefox 3
+- fix download icon
+- fix toolbar background + borders
+- fix back/forward dropmarker in icons+text mode
+- reduce menubar height
+- various improvements
+
 ### 1.0.4
 - re-base several components on Kempelton Reloaded
   - fixes Linux issues
