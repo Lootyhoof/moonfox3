@@ -70,11 +70,6 @@ toolbar:first-child, menubar {
   border-top: 0px !important;
 }
 
-menubar {
-  /* Back in the days of Firefox 2, a menubar would never get shorter than this; shorter looks too thin. */
-  min-height: 24px;
-}
-
 /* ::::: lightweight theme ::::: */
 
 menubar:-moz-lwtheme,
