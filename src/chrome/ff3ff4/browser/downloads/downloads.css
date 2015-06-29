@@ -174,60 +174,19 @@ richlistitem[type="download"]:first-child {
 /*** Button icons ***/
 
 .downloadButton.downloadCancel {
-  -moz-image-region: rect(0px, 16px, 16px, 0px);
-}
-richlistitem[type="download"]:hover > stack > .downloadButton.downloadCancel {
   -moz-image-region: rect(0px, 32px, 16px, 16px);
-}
-richlistitem[type="download"]:hover > stack > .downloadButton.downloadCancel:hover {
-  -moz-image-region: rect(0px, 49px, 16px, 33px);
-}
-richlistitem[type="download"]:hover > stack > .downloadButton.downloadCancel:active {
-  -moz-image-region: rect(0px, 66px, 16px, 50px);
 }
 
 .downloadButton.downloadShow {
-  -moz-image-region: rect(16px, 16px, 32px, 0px);
+  list-style-image: url("chrome://global/skin/icons/folder-item.png");
+  -moz-image-region: rect(0px, 32px, 16px, 16px);
 }
 richlistitem[type="download"]:hover > stack > .downloadButton.downloadShow {
-  -moz-image-region: rect(16px, 32px, 32px, 16px);
-}
-richlistitem[type="download"]:hover > stack > .downloadButton.downloadShow:hover {
-  -moz-image-region: rect(16px, 49px, 32px, 33px);
-}
-richlistitem[type="download"]:hover > stack > .downloadButton.downloadShow:active {
-  -moz-image-region: rect(16px, 66px, 32px, 50px);
-}
-#downloadsPanel[keyfocus] > #downloadsListBox > richlistitem[type="download"][state="1"]:hover > stack > .downloadButton.downloadShow {
-  -moz-image-region: rect(16px, 32px, 32px, 16px);
-}
-#downloadsPanel[keyfocus] > #downloadsListBox > richlistitem[type="download"][state="1"]:hover > stack > .downloadButton.downloadShow:hover {
-  -moz-image-region: rect(16px, 49px, 32px, 33px);
-}
-#downloadsPanel[keyfocus] > #downloadsListBox > richlistitem[type="download"][state="1"]:hover > stack > .downloadButton.downloadShow:active {
-  -moz-image-region: rect(16px, 66px, 32px, 50px);
-}
-#downloadsPanel:not([keyfocus]) > #downloadsListBox > richlistitem[type="download"][state="1"]:hover > stack > .downloadButton.downloadShow {
- -moz-image-region: rect(16px, 32px, 32px, 16px);
-}
-#downloadsPanel:not([keyfocus]) > #downloadsListBox > richlistitem[type="download"][state="1"]:hover > stack > .downloadButton.downloadShow:hover {
-  -moz-image-region: rect(16px, 49px, 32px, 33px);
-}
-#downloadsPanel:not([keyfocus]) > #downloadsListBox > richlistitem[type="download"][state="1"]:hover > stack > .downloadButton.downloadShow:active {
-  -moz-image-region: rect(16px, 66px, 32px, 50px);
+  -moz-image-region: rect(0px, 32px, 16px, 16px);
 }
 
 .downloadButton.downloadRetry {
-  -moz-image-region: rect(32px, 16px, 48px, 0px);
-}
-richlistitem[type="download"]:hover > stack > .downloadButton.downloadRetry {
-  -moz-image-region: rect(32px, 32px, 48px, 16px);
-}
-richlistitem[type="download"]:hover > stack > .downloadButton.downloadRetry:hover {
-  -moz-image-region: rect(32px, 49px, 48px, 33px);
-}
-richlistitem[type="download"]:hover > stack > .downloadButton.downloadRetry:active {
-  -moz-image-region: rect(32px, 66px, 48px, 50px);
+  -moz-image-region: rect(0px, 64px, 16px, 48px);
 }
 
 /*** Status and progress indicator ***/
@@ -256,7 +215,7 @@ toolbar[iconsize="small"] #downloads-indicator-icon {
 }
 
 #downloads-indicator[attention] > #downloads-indicator-anchor > #downloads-indicator-icon {
-  background: url("chrome://browser/skin/downloads/download-glow-big.png") center no-repeat;
+  background: url("chrome://browser/skin/downloads/download-glow.png") center no-repeat;
   width:24px;
   height:22px;
 }
