@@ -1,5 +1,9 @@
 # Changelog
 
+### 1.1.0
+- Pale Moon v26 compatibility
+- fix window borders on Windows 10
+
 ### 1.0.5
 - re-use some browser.css code from previous versions (re-re-base on FF3FF4)
 - lift searchbar code directly from Firefox 3
