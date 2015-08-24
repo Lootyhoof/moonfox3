@@ -2013,6 +2013,7 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
 }
 
 .tabbrowser-tabs {
+  max-height: none !important;
   margin-bottom: -5px;
   padding-bottom: 4px;
   -moz-margin-start: 3px;
