@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.1.2
+- fix vertical toolbar borders
+
 ### 1.1.1
 - fix tab heights in multirow bars
 
