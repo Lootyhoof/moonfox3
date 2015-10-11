@@ -2,3 +2,5 @@ skin	browser		mf3	chrome/ff3ff4/browser/
 skin	communicator	mf3	chrome/ff3ff4/communicator/
 skin	global		mf3	chrome/ff3ff4/global/
 skin	mozapps		mf3	chrome/ff3ff4/mozapps/
+skin	appver		mf3	chrome/ff3ff4/appver/25/ appversion<=26.0.0b2
+skin	appver		mf3	chrome/ff3ff4/appver/26/ appversion>26.0.0b2
