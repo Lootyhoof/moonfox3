@@ -785,11 +785,14 @@ toolbar[mode="icons"] #back-forward-dropmarker[disabled="true"]:hover:active {
 
 /* history sidebar button */
 
-#history-button {
+#history-button,
+#history-menu-button {
   -moz-image-region: rect(0px 168px 24px 144px);
 }
 #history-button:hover,
-#history-button[checked="true"] {
+#history-button[checked="true"],
+#history-menu-button:hover,
+#history-menu-button[checked="true"] {
   -moz-image-region: rect(24px 168px 48px 144px);
 }
 
@@ -1181,11 +1184,14 @@ toolbar[iconsize="small"] #downloads-button:hover {
 
 /* history sidebar button */
 
-toolbar[iconsize="small"] #history-button {
+toolbar[iconsize="small"] #history-button,
+toolbar[iconsize="small"] #history-menu-button {
   -moz-image-region: rect(0px 112px 16px 96px);
 }
 toolbar[iconsize="small"] #history-button:hover,
-toolbar[iconsize="small"] #history-button[checked="true"] {
+toolbar[iconsize="small"] #history-button[checked="true"],
+toolbar[iconsize="small"] #history-menu-button:hover,
+toolbar[iconsize="small"] #history-menu-button[checked="true"] {
   -moz-image-region: rect(16px 112px 32px 96px);
 }
 
