@@ -2435,12 +2435,6 @@ tabpanels {
   -moz-image-region: rect(96px, 120px, 120px, 96px);
 }
 
-toolbar:not(#TabsToolbar) #alltabs-button {
-  background-color: transparent !important;
-  background-image: none !important;
-  border: none !important;
-}
-
 /* Small alltabs icon */
 toolbar[iconsize="small"] #alltabs-button {
   list-style-image: url("chrome://browser/skin/Toolbar-small.png");
