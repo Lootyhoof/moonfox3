@@ -1,8 +1,8 @@
-skin	browser		mf3	chrome/ff3ff4/browser/
-skin	communicator	mf3	chrome/ff3ff4/communicator/
-skin	global		mf3	chrome/ff3ff4/global/
-skin	mozapps		mf3	chrome/ff3ff4/mozapps/
-skin	appver		mf3	chrome/ff3ff4/appver/25/ appversion<=26.0.0b2
-skin	appver		mf3	chrome/ff3ff4/appver/26/ appversion>26.0.0b2
-skin	os			mf3	chrome/ff3ff4/os/winnt/	os=WINNT	
-skin	os			mf3	chrome/ff3ff4/os/linux/	os=Linux
+skin	browser		mf3	chrome/browser/
+skin	communicator	mf3	chrome/communicator/
+skin	global		mf3	chrome/global/
+skin	mozapps		mf3	chrome/mozapps/
+skin	appver		mf3	chrome/appver/25/ appversion<=26.0.0b2
+skin	appver		mf3	chrome/appver/26/ appversion>26.0.0b2
+skin	os			mf3	chrome/os/winnt/	os=WINNT	
+skin	os			mf3	chrome/os/linux/	os=Linux
