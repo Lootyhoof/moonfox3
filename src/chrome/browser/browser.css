@@ -2118,7 +2118,7 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
 .tabbrowser-arrowscrollbox > .scrollbutton-up:-moz-lwtheme-brighttext,
 .tabbrowser-arrowscrollbox > .scrollbutton-down:-moz-lwtheme-brighttext,
 .tabs-newtab-button:-moz-lwtheme-brighttext,
-.tabs-alltabs-button:-moz-lwtheme-brighttext {
+#TabsToolbar .tabs-alltabs-button:-moz-lwtheme-brighttext {
   background-color: rgba(0,0,0,.5);
 }
 
@@ -2126,7 +2126,7 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
 .tabbrowser-arrowscrollbox > .scrollbutton-up:-moz-lwtheme-darktext,
 .tabbrowser-arrowscrollbox > .scrollbutton-down:-moz-lwtheme-darktext,
 .tabs-newtab-button:-moz-lwtheme-darktext,
-.tabs-alltabs-button:-moz-lwtheme-darktext {
+#TabsToolbar .tabs-alltabs-button:-moz-lwtheme-darktext {
   background-color: rgba(255,255,255,.5);
 }
 
