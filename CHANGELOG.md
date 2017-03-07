@@ -1,5 +1,12 @@
 # Changelog
 
+### 1.5.1
+- provide icon for visited livemarks
+- sync devtools styling with default
+- style toolbarbutton-badge and allow extensions to style it
+- reference download icons correctly
+- add border to download items
+
 ### 1.5.0
 - support PM27's devtools
 - drop PM26 support
