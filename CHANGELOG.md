@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.6.0
+- sync about:support styling with default
+- sync about:permissions styling with default
+- add image document favicon when viewing standalone images
+- fix "learn more" links in notification popups
+
 ### 1.5.1
 - provide icon for visited livemarks
 - sync devtools styling with default
