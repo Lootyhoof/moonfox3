@@ -27,19 +27,16 @@
   max-width: 40ch;
 }
 
-@media (-moz-windows-default-theme) {
-  #downloadsFooter {
-    background-color: hsla(216,45%,88%,.98);
-    box-shadow: 0px 1px 2px rgb(204,214,234) inset;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-  }
-}
-
 #downloadsHistory {
   background: transparent;
-  color: -moz-nativehyperlinktext;
   cursor: pointer;
+}
+
+@media (-moz-os-version: windows-vista),
+       (-moz-os-version: windows-win7) {
+  #downloadsHistory {
+    color: -moz-nativehyperlinktext;
+  }
 }
 
 #downloadsPanel[keyfocus] > #downloadsFooter > #downloadsHistory:focus {
@@ -50,6 +47,40 @@
 #downloadsHistory > .button-box {
   border: none;
   margin: 1em;
+}
+
+#downloadsFooter {
+  background-color: hsla(210,4%,10%,.04);
+  box-shadow: 0 1px 0 hsla(210,4%,10%,.08) inset;
+  transition-duration: 150ms;
+  transition-property: background-color;
+}
+
+#downloadsFooter:hover {
+  background-color: hsla(210,4%,10%,.05);
+}
+
+#downloadsFooter:hover:active {
+  background-color: hsla(210,4%,10%,.1);
+  box-shadow: 0 2px 0 0 hsla(210,4%,10%,.1) inset;
+}
+
+@media (-moz-os-version: windows-vista),
+       (-moz-os-version: windows-win7) {
+  @media (-moz-windows-default-theme) {
+    #downloadsFooter {
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+      transition-duration: 0s;
+    }
+
+    #downloadsFooter,
+    #downloadsFooter:hover,
+    #downloadsFooter:hover:active {
+      background-color: #f1f5fb;
+      box-shadow: 0px 1px 2px rgb(204,214,234) inset;
+    }
+  }
 }
 
 /*** Downloads Summary and List items ***/
@@ -212,58 +243,46 @@ richlistitem[type="download"]:hover > stack > .downloadButton.downloadShow {
 /*** Main indicator icon ***/
 
 #downloads-indicator-icon {
-  background: -moz-image-rect(url("chrome://browser/skin/Toolbar.png"),
+  background: -moz-image-rect(url("chrome://browser/skin/Toolbar-large.png"),
                               0, 144, 24, 120) no-repeat;
   width:24px;
-  height:22px;
+  height:24px;
 }
 
 toolbar[iconsize="small"] #downloads-indicator-icon {
   background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"),
                               0, 96, 15, 80) no-repeat;
   width:16px;
-  height:15px;
+  height:16px;
 }
 
 #downloads-indicator[attention] > #downloads-indicator-anchor > #downloads-indicator-icon {
   background: url("chrome://browser/skin/downloads/download-glow.png") center no-repeat;
-  width:24px;
-  height:22px;
-}
-
-toolbar[iconsize="small"] #downloads-indicator[attention] > #downloads-indicator-anchor > #downloads-indicator-icon {
-  background: url("chrome://browser/skin/downloads/download-glow.png") center no-repeat;
-  width:16px;
-  height:15px;
+  width:18px;
+  height:18px;
 }
 
 /* In the next few rules, we use :not([counter]) as a shortcut that is
    equivalent to -moz-any([progress], [paused]). */
 
 #downloads-indicator:not([counter]) > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-counter {
-  background: -moz-image-rect(url("chrome://browser/skin/Toolbar.png"),
+  background: -moz-image-rect(url("chrome://browser/skin/Toolbar-large.png"),
                               0, 144, 24, 120) no-repeat;
   width:24px;
-  height:22px;
+  height:24px;
 }
 
 toolbar[iconsize="small"] #downloads-indicator:not([counter]) > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-counter {
   background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"),
                               0, 96, 15, 80) no-repeat;
   width:16px;
-  height:15px;
+  height:16px;
 }
 
 #downloads-indicator:not([counter])[attention] > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-counter {
-  background: url("chrome://browser/skin/downloads/download-glow-big.png") center no-repeat;
-  width:24px;
-  height:22px;
-}
-
-toolbar[iconsize="small"] #downloads-indicator:not([counter])[attention] > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-counter {
   background: url("chrome://browser/skin/downloads/download-glow.png") center no-repeat;
-  width:16px;
-  height:15px;
+  width:18px;
+  height:18px;
 }
 
 /*** Download notifications ***/

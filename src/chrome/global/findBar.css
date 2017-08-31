@@ -4,6 +4,10 @@
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
+:root {
+  --shadow-color: ThreeDShadow;
+}
+
 .findbar-closebutton {
   border: none;
   padding: 3px 5px;
@@ -12,7 +16,7 @@
 
 findbar {
   padding-top: 1px;
-  background-image: linear-gradient(rgba(0,0,0,.15) 1px, rgba(255,255,255,.15) 1px);
+  background-image: linear-gradient(var(--shadow-color) 1px, rgba(255,255,255,.15) 1px);
   background-size: 100% 2px;
   background-repeat: no-repeat;
   min-width: 1px;
