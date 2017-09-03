@@ -1,3 +1,8 @@
+:root {
+  --shadow-color: #CCCCCC !important;
+  --shadow-light-color: #AAAAAA !important;
+}
+
 #titlebar {
   display: none;
 }
