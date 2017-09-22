@@ -430,12 +430,8 @@ toolbar[mode=full] .toolbarbutton-1:not([type=menu-button]) {
   -moz-box-orient: horizontal;
 }
 
-.toolbarbutton-1:not([disabled="true"]):not([badge]):hover:not(:active) .toolbarbutton-icon {
-  filter: saturate(150%) brightness(110%);
-}
-
 .toolbarbutton-1:not([disabled="true"]):not([badge]):hover:active .toolbarbutton-icon {
-  filter: brightness(75%);
+  filter: brightness(95%);
 }
 
 .toolbarbutton-1[disabled="true"]:not([badge]) {
