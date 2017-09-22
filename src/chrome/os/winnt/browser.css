@@ -1,5 +1,20 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
+/* navigator-toolbox */
+
+#navigator-toolbox::after {
+  content: "";
+  display: -moz-box;
+  -moz-box-ordinal-group: 101; /* tabs toolbar is 100 */
+  height: 1px;
+  background-color: var(--shadow-color);
+}
+
+#navigator-toolbox[tabsontop=false]::after,
+#main-window[disablechrome] #navigator-toolbox::after {
+  visibility: collapse;
+}
+
 @media not all and (-moz-windows-compositor) {
   #main-window[tabsintitlebar]:not([inFullscreen]) #toolbar-menubar[inactive] ~ #TabsToolbar:not(:-moz-lwtheme) {
     background: linear-gradient(bottom, rgba(10%,10%,10%,.4) 1px, transparent 1px),
