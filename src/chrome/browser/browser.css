@@ -465,10 +465,6 @@ toolbar[mode=full] .toolbarbutton-1:not([type=menu-button]) {
   -moz-binding: url(chrome://global/skin/globalBindings.xml#restore-back-forward-dropmarker);
 }
 
-#tab-view-deck #unified-back-forward-button dropmarker {
-  display: none !important;
-}
-
 toolbar[mode="full"] .toolbarbutton-1,
 toolbar[mode="full"] .toolbarbutton-1 > .toolbarbutton-menubutton-button {
   min-width: 57px;
