@@ -433,11 +433,11 @@ toolbar[mode=full] .toolbarbutton-1:not([type=menu-button]) {
   -moz-box-orient: horizontal;
 }
 
-.toolbarbutton-1:not([disabled="true"]):not([badge]):hover:active .toolbarbutton-icon {
+:-moz-any(#back-button, #forward-button, #stop-button, #reload-button, #home-button, #downloads-button, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #print-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-in-button, #zoom-out-button, #feed-button, #sync-button, #alltabs-button):not([disabled="true"]):hover:active .toolbarbutton-icon {
   filter: brightness(95%);
 }
 
-.toolbarbutton-1[disabled="true"]:not([badge]) {
+:-moz-any(#back-button, #forward-button, #stop-button, #reload-button, #home-button, #downloads-button, #history-button, #history-menu-button, #bookmarks-button, #bookmarks-menu-button, #print-button, #new-tab-button, #new-window-button, #cut-button, #copy-button, #paste-button, #fullscreen-button, #zoom-in-button, #zoom-out-button, #feed-button, #sync-button, #alltabs-button)[disabled="true"] {
   filter: grayscale(100%);
   opacity: 0.4;
 }
@@ -481,6 +481,30 @@ toolbar[mode="full"] .toolbarbutton-1 > .toolbarbutton-menubutton-button {
   -moz-appearance: none;
   border-style: none;
   padding: 0 3px;
+}
+
+#TabsToolbar .toolbarbutton-1:not([disabled]):hover,
+#TabsToolbar .toolbarbutton-1[open],
+#TabsToolbar .toolbarbutton-1 > .toolbarbutton-menubutton-button:not([disabled]):hover,
+.tabbrowser-arrowscrollbox > .scrollbutton-up:not([disabled]):hover,
+.tabbrowser-arrowscrollbox > .scrollbutton-down:not([disabled]):hover {
+  background-image: -moz-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.5)),
+                    -moz-linear-gradient(transparent, rgba(0,0,0,.25) 30%),
+                    -moz-linear-gradient(transparent, rgba(0,0,0,.25) 30%);
+  background-position: 1px -1px, 0 -1px, 100% -1px;
+  background-size: -moz-calc(100% - 2px) 100%, 1px 100%, 1px 100%;
+  background-repeat: no-repeat;
+}
+
+#addon-bar .toolbarbutton-1:not([disabled]):hover,
+#addon-bar .toolbarbutton-1[open],
+#addon-bar .toolbarbutton-1 > .toolbarbutton-menubutton-button:not([disabled]):hover {
+  background-image: -moz-linear-gradient(bottom, transparent, rgba(0,0,0,.15)),
+                    -moz-linear-gradient(bottom, transparent, rgba(0,0,0,.15) 30%),
+                    -moz-linear-gradient(bottom, transparent, rgba(0,0,0,.15) 30%);
+  background-position: left, left, right;
+  background-size: auto, 1px 100%, 1px 100%;
+  background-repeat: no-repeat;
 }
 
 #back-button:-moz-locale-dir(rtl) > .toolbarbutton-icon,
