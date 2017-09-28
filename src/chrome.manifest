@@ -5,6 +5,3 @@ skin	mozapps		mf3	chrome/mozapps/
 skin	os			mf3	chrome/os/winnt/	os=WINNT	
 skin	os			mf3	chrome/os/linux/	os=Linux
 skin	os			mf3	chrome/os/darwin/	os=Darwin
-
-skin	appver		mf3	chrome/appver/274/	appversion<27.5.0a1
-skin	appver		mf3	chrome/appver/275/	appversion>=27.5.0a1
