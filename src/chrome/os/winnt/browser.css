@@ -39,7 +39,7 @@
 @media not all and (-moz-os-version: windows-win10) {
   #main-window[tabsintitlebar] .tabbrowser-tab:not([selected]),
   #main-window[tabsintitlebar] .tabs-newtab-button{
-    border-bottom: 1px solid ThreeDShadow;
+    border-bottom: 1px solid var(--shadow-color);
   }
 }
 
@@ -646,7 +646,7 @@ toolbarbutton.bookmark-item[open="true"] {
     /* Fix tab borders in tabsintitlebar mode */
     #main-window[tabsintitlebar] .tabbrowser-tab:not([selected]):not(:-moz-lwtheme),
     #main-window[tabsintitlebar] .tabs-newtab-button:not(:-moz-lwtheme) {
-      border-bottom: 1px solid ThreeDShadow;
+      border-bottom: 1px solid var(--shadow-color);
     }
     
     #main-window[tabsintitlebar] #TabsToolbar {
