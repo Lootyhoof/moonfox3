@@ -12,7 +12,7 @@
 
 #TabsToolbar[tabsontop="true"] .tabbrowser-tab:not([selected="true"]):not(:hover):not(:-moz-lwtheme),
 #TabsToolbar[tabsontop="true"] .tabs-newtab-button:not(:-moz-lwtheme) {
-  border-bottom: 1px solid ThreeDShadow;
+  border-bottom: 1px solid var(--shadow-color);
 }
 
 #TabsToolbar[tabsontop="true"] .tabbrowser-tab:not([selected="true"]):hover {
@@ -29,7 +29,7 @@
 }
 
 #main-window:not([disablechrome]) #navigator-toolbox[tabsontop=true] {
-  border-bottom: 1px solid ThreeDShadow;
+  border-bottom: 1px solid var(--shadow-color);
 }
 
 .toolbarbutton-1 > .toolbarbutton-menu-dropmarker,
