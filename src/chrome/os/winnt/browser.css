@@ -17,16 +17,14 @@
 
 @media not all and (-moz-windows-compositor) {
   #main-window[tabsintitlebar]:not([inFullscreen]) #toolbar-menubar[inactive] ~ #TabsToolbar:not(:-moz-lwtheme) {
-    background: linear-gradient(bottom, rgba(10%,10%,10%,.4) 1px, transparent 1px),
-                linear-gradient(rgba(50%,50%,50%,0), ActiveCaption 85%);
+    background: ActiveCaption;
     color: CaptionText;
   }
   #main-window[tabsintitlebar]:not([inFullscreen]) #toolbar-menubar[inactive] ~ #TabsToolbar:not(:-moz-lwtheme):-moz-window-inactive {
-    background: linear-gradient(bottom, rgba(10%,10%,10%,.4) 1px, transparent 1px),
-                linear-gradient(rgba(50%,50%,50%,0), InactiveCaption 85%);
+    background: InactiveCaption;
     color: InactiveCaptionText;
   }
-  
+
   #main-window[tabsintitlebar] #titlebar:-moz-lwtheme {
     visibility: hidden;
   }
@@ -36,11 +34,9 @@
   }
 }
 
-@media not all and (-moz-os-version: windows-win10) {
-  #main-window[tabsintitlebar] .tabbrowser-tab:not([selected]),
-  #main-window[tabsintitlebar] .tabs-newtab-button{
-    border-bottom: 1px solid var(--shadow-color);
-  }
+#main-window[tabsintitlebar] .tabbrowser-tab:not([selected]):not(:-moz-lwtheme),
+#main-window[tabsintitlebar] .tabs-newtab-button:not(:-moz-lwtheme) {
+  border-bottom: 1px solid var(--shadow-color);
 }
 
 /* ::::: app menu button ::::: */
@@ -643,14 +639,9 @@ toolbarbutton.bookmark-item[open="true"] {
   }
   
   @media (-moz-os-version: windows-win10) {
-    /* Fix tab borders in tabsintitlebar mode */
-    #main-window[tabsintitlebar] .tabbrowser-tab:not([selected]):not(:-moz-lwtheme),
-    #main-window[tabsintitlebar] .tabs-newtab-button:not(:-moz-lwtheme) {
-      border-bottom: 1px solid var(--shadow-color);
-    }
-    
+    /* Fix tab margins in tabsintitlebar mode */ 
     #main-window[tabsintitlebar] #TabsToolbar {
-      margin-top: -2px !important;
+      margin-top: -3px !important;
     }
   }
     
