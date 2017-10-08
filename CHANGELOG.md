@@ -1,5 +1,18 @@
 # Changelog
 
+### 2.0.1
+- set minimum supported version to Pale Moon 27.5.0
+- fix statusbar progressmeter custom colors
+- re-implement toolbarbutton-style all-tabs button
+- more closely emulate Firefox 3 toolbarbutton styling
+- don't use filters on extension icons
+- re-implement back-forward dropmarker in icons+text and text modes
+- improve statusbar appearance
+- improve titlebar styling on non-compositor Windows when tabs are in titlebar
+- Win10: use white window backgrounds on active windows with no accent color applied
+- Linux: redesign appmenu button
+- minor cleanup
+
 ### 2.0.0
 - refactor toolbarbutton styling
 - refactor tab styling
