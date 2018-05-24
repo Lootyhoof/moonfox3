@@ -133,7 +133,6 @@
   list-style-image: url("chrome://mozapps/skin/extensions/utilities.png");
   margin-inline-end: 0;
   margin-bottom: 0;
-  filter: opacity(70%);
 }
 
 #alertSettings > .button-box {
@@ -141,7 +140,7 @@
 }
 
 #alertSettings:hover {
-  filter: none;
+  filter: brightness(90%) contrast(110%);
 }
 
 #alertSettings[focusedViaMouse]:-moz-focusring > .button-box {
