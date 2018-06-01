@@ -135,7 +135,8 @@ toolbarbutton[type="menu-button"][disabled="true"]:hover:active {
   right: auto;
 }
 
-.toolbarbutton-badge-container {
+.toolbarbutton-badge-container,
+.toolbarbutton-badge-stack {
   position: relative;
 }
 

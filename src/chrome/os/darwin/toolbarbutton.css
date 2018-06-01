@@ -119,7 +119,8 @@ toolbar[mode="icons"] > *|* > .toolbarbutton-badge:-moz-locale-dir(rtl)::after {
   left: -10px;
 }
 
-.toolbarbutton-badge-container {
+.toolbarbutton-badge-container,
+.toolbarbutton-badge-stack {
   position: relative;
 }
 
