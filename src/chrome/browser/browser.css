@@ -3330,26 +3330,22 @@ html|*#gcli-output-frame {
 
 /* Badge toolbar item */
 
-.toolbarbutton-badge-container,
 .toolbarbutton-badge-stack {
   margin: 0;
   padding: 0;
   position: relative;
 }
 
-#navigator-toolbox[iconsize=large][mode=icons] > #nav-bar .toolbarbutton-1 > .toolbarbutton-badge-container,
 #navigator-toolbox[iconsize=large][mode=icons] > #nav-bar .toolbarbutton-1 > .toolbarbutton-badge-stack {
   padding: 2px 5px;
 }
 
-.toolbarbutton-1 > .toolbarbutton-badge-container > .toolbar-icon,
 .toolbarbutton-1 > .toolbarbutton-badge-stack > .toolbar-icon {
   position: absolute;
   top: 2px;
   right: 2px;
 }
 
-.toolbarbutton-badge-container > .toolbarbutton-icon[label]:not([label=""]),
 .toolbarbutton-badge-stack > .toolbarbutton-icon[label]:not([label=""]) {
   margin-inline-end: 0;
 }
