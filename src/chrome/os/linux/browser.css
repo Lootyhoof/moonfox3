@@ -1,5 +1,5 @@
-#main-menubar > menu:not(:-moz-lwtheme) {
-  color: -moz-DialogText;
+#toolbar-menubar:not(:-moz-lwtheme) {
+  -moz-appearance: menubar !important;
 }
 
 #TabsToolbar[tabsontop="true"] .tabbrowser-tabs {
