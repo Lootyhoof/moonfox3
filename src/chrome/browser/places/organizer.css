@@ -2,7 +2,7 @@
 /* Toolbar */
 #placesToolbar {
   padding: 3px;  /* b/f buttons have a 1px image padding */
-  -moz-padding-end: 4px;
+  padding-inline-end: 4px;
 }
 
 /* back & forward buttons */
@@ -55,14 +55,14 @@
 
 /* Menu */
 #placesMenu {
-  -moz-margin-start: 8px;
+  margin-inline-start: 8px;
   -moz-appearance: none;
   border: none;
 }
 
 #placesMenu > menu {
-  -moz-padding-start: 4px;
-  -moz-padding-end: 1px;
+  padding-inline-start: 4px;
+  padding-inline-end: 1px;
   padding-top: 2px;
   padding-bottom: 2px;
   -moz-appearance: toolbarbutton;
@@ -80,14 +80,14 @@
 
 #placesMenu > menu[open="true"] {
   border-color: ThreeDShadow ThreeDHighlight ThreeDHighlight ThreeDShadow;
-  -moz-padding-start: 5px;
-  -moz-padding-end: 0px;
+  padding-inline-start: 5px;
+  padding-inline-end: 0px;
   padding-top: 3px;
   padding-bottom: 1px;
 }
 
 #placesMenu > menu > .menubar-text {
-  -moz-padding-end: 8px;
+  padding-inline-end: 8px;
   background: url(chrome://global/skin/arrow/arrow-dn.gif) right center no-repeat;
 }
 
@@ -174,12 +174,12 @@
 }
 
 #infoBoxExpanderLabel {
-  -moz-padding-start: 2px;
+  padding-inline-start: 2px;
 }
 
 #organizerScopeBar {
   padding: 2px 0;
-  -moz-padding-end: 3px;
+  padding-inline-end: 3px;
 }
 
 #organizerScopeBar > toolbarbutton {

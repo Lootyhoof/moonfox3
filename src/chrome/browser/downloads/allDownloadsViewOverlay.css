@@ -19,8 +19,8 @@
 }
 
 .downloadTypeIcon {
-  -moz-margin-end: 8px;
-  -moz-margin-start: 8px;
+  margin-inline-end: 8px;
+  margin-inline-start: 8px;
   /* Prevent flickering when changing states. */
   min-height: 32px;
   min-width: 32px;
@@ -38,14 +38,14 @@ richlistitem[type="download"][alternate="true"]:not([selected="true"]) {
 .downloadDisplayName {
   margin-bottom: 2px;
   font-size: larger;
-  -moz-margin-start: 6px;
+  margin-inline-start: 6px;
   cursor: inherit;
 }
 
 .downloadDetails {
   font-size: 100%;
   margin-bottom: 2px;
-  -moz-margin-start: 6px;
+  margin-inline-start: 6px;
 }
 
 .downloadButton {
