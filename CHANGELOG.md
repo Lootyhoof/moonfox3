@@ -1,5 +1,8 @@
 # Changelog
 
+### 2.3.1
+- fix version number
+
 ### 2.3.0
 - sync global stylings with Pale Moon 28
 - remove redundant devtools styling
