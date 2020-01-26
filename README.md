@@ -1,5 +1,5 @@
 # Moonfox3
-![Preview](http://i63.tinypic.com/f3hx0w.png)
+![Preview](https://i.imgur.com/0idKKWr.png)
 
 Fork of the theme "Firefox 3 theme for Firefox 4+ Reloaded!" by dallasthemaster and Jeremy Morton for Pale Moon.
 
