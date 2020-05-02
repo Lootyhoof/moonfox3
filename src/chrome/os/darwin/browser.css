@@ -144,6 +144,12 @@ toolbar[iconsize="small"][mode="icons"] #back-forward-dropmarker {
   margin: 0 -5px !important;
 }
 
+/* Blend the topmost toolbar with the titlebar */
+
+#main-window[tabsontop=false] #nav-bar:not(:-moz-lwtheme) {
+  -moz-appearance: toolbar;
+}
+
 /* Private browsing indicator */
 
 #main-window[privatebrowsingmode=temporary] #TabsToolbar::before {
