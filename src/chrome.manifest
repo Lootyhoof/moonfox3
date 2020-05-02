@@ -2,8 +2,8 @@ skin	browser		mf3	chrome/browser/
 skin	communicator	mf3	chrome/communicator/
 skin	global		mf3	chrome/global/
 skin	mozapps		mf3	chrome/mozapps/
+skin	os			mf3	chrome/os/linux/
 skin	os			mf3	chrome/os/winnt/	os=WINNT	
-skin	os			mf3	chrome/os/linux/	os=Linux
 skin	os			mf3	chrome/os/darwin/	os=Darwin
 
 override chrome://browser/skin/autocomplete.css chrome://global/skin/autocomplete.css
