@@ -1,5 +1,8 @@
 # Changelog
 
+### 2.6.1
+- don't let the download indicator grow the toolbar
+
 ### 2.6.0
 - improve integration with macOS
 - support other GTK-based operating systems
