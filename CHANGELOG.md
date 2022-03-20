@@ -1,5 +1,10 @@
 # Changelog
 
+### 2.7.0
+- add mixed-mode SSL styling
+- improve findbar appearance
+- support Pale Moon 30
+
 ### 2.6.1
 - don't let the download indicator grow the toolbar
 
